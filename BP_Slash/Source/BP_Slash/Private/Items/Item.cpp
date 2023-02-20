@@ -5,16 +5,17 @@
 #include "BP_Slash/DebugMacros.h"
 
 //#define DRAW_SPHERE(Location) if (GetWorld()) DrawDebugSphere(GetWorld(), Location, 25.f, THIRTY, FColor::Red, false, 30.f)
-
 AItem::AItem()
 {
-	PrimaryActorTick.bCanEverTick = true; 
+	PrimaryActorTick.bCanEverTick = true;
+
+	ItemMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("ItemMeshComponent"));
+	RootComponent = ItemMesh;
 }
 
 void AItem::BeginPlay()
 {
 	Super::BeginPlay();
-
 }
 
 float AItem::TransformedSin()
@@ -30,12 +31,5 @@ float AItem::TransformedCos()
 void AItem::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
 	RunningTime += DeltaTime;
-
-	//float DeltaZ = Amplitude * FMath::Sin(RunningTime * TimeConstant);
-	//AddActorWorldOffset(FVector(0.f, 0.f, DeltaZ));
-
-	DRAW_SPHERE_SingleFrame(GetActorLocation());
-	DRAW_VECTOR_SingleFrame(GetActorLocation(), GetActorLocation() + GetActorForwardVector() * 100.f);
 }
