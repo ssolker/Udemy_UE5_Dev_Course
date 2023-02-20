@@ -3,6 +3,9 @@
 #include "Pawns/Bird.h"
 #include "Components/CapsuleComponent.h"
 #include "Components/SkeletalMeshComponent.h"
+#include "Components/InputComponent.h"
+#include "EnhancedInputSubsystems.h"
+#include "EnhancedInputComponent.h"
 
 // Sets default values
 ABird::ABird()
@@ -23,6 +26,12 @@ ABird::ABird()
 void ABird::BeginPlay()
 {
 	Super::BeginPlay();
+	//APlayerController* PlayerController = Cast<APlayerController>(GetController());
+	if (APlayerController* PlayerController = Cast<APlayerController>(GetController())) { //declared and initialised in if statement for minor performance improvement
+		if (UEnhancedInputLocalPlayerSubsystem* Subsystem = ULocalPlayer::GetSubsystem<UEnhancedInputLocalPlayerSubsystem>(PlayerController->GetLocalPlayer())) {
+			Subsystem->AddMappingContext(BirdMappingContext, 0); //Priority 0 lowest
+		}
+	}
 }
 
 void ABird::MoveForward(float value)
@@ -31,6 +40,14 @@ void ABird::MoveForward(float value)
 		UE_LOG(LogTemp, Warning, TEXT("Value: %f"), value);
 	}
 	
+}
+
+void ABird::Move(const FInputActionValue& Value)
+{
+	const bool CurrentValue = Value.Get<bool>();
+	if (CurrentValue) {
+		UE_LOG(LogTemp, Warning, TEXT("MOVED"));
+	}
 }
 
 void ABird::Tick(float DeltaTime)
@@ -44,6 +61,9 @@ void ABird::Tick(float DeltaTime)
 void ABird::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
-	PlayerInputComponent->BindAxis(FName("MoveForward"), this, &ABird::MoveForward); //TEXT("MoveForward"), Need to include All
+	PlayerInputComponent->BindAxis(FName("MoveForward"), this, &ABird::MoveForward); //TEXT("MoveForward"), Need to include All	
+	if (UEnhancedInputComponent* EnhancedInputComponent = CastChecked<UEnhancedInputComponent>(PlayerInputComponent)) { //crash if cast fails since cast check
+		EnhancedInputComponent->BindAction(MoveAction, ETriggerEvent::Triggered, this, &ABird::Move);
+	}
 }
 
