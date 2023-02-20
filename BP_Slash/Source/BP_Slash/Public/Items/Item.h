@@ -20,8 +20,8 @@ protected:
 private:
 	UPROPERTY(VisibleAnywhere);
 	float RunningTime;
-	UPROPERTY(EditDefaultsOnly); //Edit only in blueprint editor not in instance (Only in default) EditAnywhere in both
+	UPROPERTY(EditAnywhere); //Edit only in blueprint editor not in instance (Only in default) EditAnywhere in both
 	float Amplitude = 0.25f;
-	UPROPERTY(EditInstanceOnly);
+	UPROPERTY(EditAnywhere);
 	float TimeConstant = 5.f;
 };
