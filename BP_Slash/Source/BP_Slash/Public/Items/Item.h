@@ -18,7 +18,10 @@ protected:
 	virtual void BeginPlay() override;
 
 private:
+	UPROPERTY(VisibleAnywhere);
 	float RunningTime;
+	UPROPERTY(EditDefaultsOnly); //Edit only in blueprint editor not in instance (Only in default) EditAnywhere in both
 	float Amplitude = 0.25f;
+	UPROPERTY(EditInstanceOnly);
 	float TimeConstant = 5.f;
 };
