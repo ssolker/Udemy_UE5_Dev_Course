@@ -9,6 +9,7 @@
 
 //Forward Declarations
 class UCapsuleComponent;
+class USkeletalMeshComponent;
 
 UCLASS()
 class BP_SLASH_API ABird : public APawn
@@ -27,4 +28,7 @@ protected:
 private:
 	UPROPERTY(VisibleAnywhere)
 	UCapsuleComponent* Capsule;
+
+	UPROPERTY(VisibleAnywhere);
+	USkeletalMeshComponent* BirdMesh;
 };
