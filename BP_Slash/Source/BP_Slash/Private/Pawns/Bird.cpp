@@ -42,11 +42,16 @@ void ABird::MoveForward(float value)
 	
 }
 
+//set value type in IA_Move in UE
 void ABird::Move(const FInputActionValue& Value)
 {
-	const bool CurrentValue = Value.Get<bool>();
-	if (CurrentValue) {
-		UE_LOG(LogTemp, Warning, TEXT("MOVED"));
+	//Value 0 nothing, 1 w and s -1	
+	const float CurrentValue = Value.Get<float>();
+	UE_LOG(LogTemp, Warning, TEXT("Value: %f"), CurrentValue);
+
+	if (GetController() && (CurrentValue != 0.f)) {
+		FVector Forward = GetActorForwardVector();
+		AddMovementInput(Forward, CurrentValue);
 	}
 }
 
@@ -61,7 +66,7 @@ void ABird::Tick(float DeltaTime)
 void ABird::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
-	PlayerInputComponent->BindAxis(FName("MoveForward"), this, &ABird::MoveForward); //TEXT("MoveForward"), Need to include All	
+	//PlayerInputComponent->BindAxis(FName("MoveForward"), this, &ABird::MoveForward); //TEXT("MoveForward"), Need to include All	
 	if (UEnhancedInputComponent* EnhancedInputComponent = CastChecked<UEnhancedInputComponent>(PlayerInputComponent)) { //crash if cast fails since cast check
 		EnhancedInputComponent->BindAction(MoveAction, ETriggerEvent::Triggered, this, &ABird::Move);
 	}
