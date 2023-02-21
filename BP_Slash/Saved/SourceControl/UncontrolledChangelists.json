@@ -12,7 +12,13 @@
 				"C:/UE/UE_Projects/Udemy_UE5_Dev_Course2/BP_Slash/Content/StarterContent/Maps/Minimal_Default.umap",
 				"C:/UE/UE_Projects/Udemy_UE5_Dev_Course2/BP_Slash/Content/StarterContent/Blueprints/Pawns/Input/IA_Move.uasset",
 				"C:/UE/UE_Projects/Udemy_UE5_Dev_Course2/BP_Slash/Content/StarterContent/Blueprints/Pawns/Input/IMC_BirdContext.uasset",
-				"C:/UE/UE_Projects/Udemy_UE5_Dev_Course2/BP_Slash/Content/StarterContent/Blueprints/Pawns/Input/IA_Look.uasset"
+				"C:/UE/UE_Projects/Udemy_UE5_Dev_Course2/BP_Slash/Content/StarterContent/Blueprints/Pawns/Input/IA_Look.uasset",
+				"C:/UE/UE_Projects/Udemy_UE5_Dev_Course2/BP_Slash/Content/StarterContent/Blueprints/GameMode/BP_BirdGameMode.uasset",
+				"C:/UE/UE_Projects/Udemy_UE5_Dev_Course2/BP_Slash/Content/OrcGirl/Input/IA_OrcGirlMove.uasset",
+				"C:/UE/UE_Projects/Udemy_UE5_Dev_Course2/BP_Slash/Content/OrcGirl/Blueprints/BP_OrcGirl.uasset",
+				"C:/UE/UE_Projects/Udemy_UE5_Dev_Course2/BP_Slash/Content/OrcGirl/Input/IMC_Orc.uasset",
+				"C:/UE/UE_Projects/Udemy_UE5_Dev_Course2/BP_Slash/Content/OrcGirl/Maps/Showcase.umap",
+				"C:/UE/UE_Projects/Udemy_UE5_Dev_Course2/BP_Slash/Content/OrcGirl/Input/IA_MoveOrc.uasset"
 			]
 		}
 	]
