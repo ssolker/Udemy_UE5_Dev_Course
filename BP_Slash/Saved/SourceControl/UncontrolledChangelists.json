@@ -11,7 +11,8 @@
 				"C:/UE/UE_Projects/Udemy_UE5_Dev_Course2/BP_Slash/Content/StarterContent/Blueprints/Pawns/BP_Bird.uasset",
 				"C:/UE/UE_Projects/Udemy_UE5_Dev_Course2/BP_Slash/Content/StarterContent/Maps/Minimal_Default.umap",
 				"C:/UE/UE_Projects/Udemy_UE5_Dev_Course2/BP_Slash/Content/StarterContent/Blueprints/Pawns/Input/IA_Move.uasset",
-				"C:/UE/UE_Projects/Udemy_UE5_Dev_Course2/BP_Slash/Content/StarterContent/Blueprints/Pawns/Input/IMC_BirdContext.uasset"
+				"C:/UE/UE_Projects/Udemy_UE5_Dev_Course2/BP_Slash/Content/StarterContent/Blueprints/Pawns/Input/IMC_BirdContext.uasset",
+				"C:/UE/UE_Projects/Udemy_UE5_Dev_Course2/BP_Slash/Content/StarterContent/Blueprints/Pawns/Input/IA_Look.uasset"
 			]
 		}
 	]

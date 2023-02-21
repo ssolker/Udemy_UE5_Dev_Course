@@ -27,6 +27,9 @@ ABird::ABird()
 
 	ViewCamera = CreateDefaultSubobject<UCameraComponent>(TEXT("ViewCamera"));
 	ViewCamera->SetupAttachment(SpringArm);
+	
+	bUseControllerRotationPitch = true;
+	bUseControllerRotationYaw = true;
 
 	AutoPossessPlayer = EAutoReceiveInput::Player0;
 
@@ -64,6 +67,16 @@ void ABird::Move(const FInputActionValue& Value)
 	}
 }
 
+//set value type in IA_Move in UE
+void ABird::Look(const FInputActionValue& Value)
+{
+	const FVector2D LookAxisValue = Value.Get<FVector2D>();
+	if (GetController()) {
+		AddControllerYawInput(LookAxisValue.X);
+		AddControllerPitchInput(LookAxisValue.Y);
+	}
+}
+
 void ABird::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
@@ -78,6 +91,7 @@ void ABird::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 	//PlayerInputComponent->BindAxis(FName("MoveForward"), this, &ABird::MoveForward); //TEXT("MoveForward"), Need to include All	
 	if (UEnhancedInputComponent* EnhancedInputComponent = CastChecked<UEnhancedInputComponent>(PlayerInputComponent)) { //crash if cast fails since cast check
 		EnhancedInputComponent->BindAction(MoveAction, ETriggerEvent::Triggered, this, &ABird::Move);
+		EnhancedInputComponent->BindAction(LookAction, ETriggerEvent::Triggered, this, &ABird::Look);
 	}
 }
 
