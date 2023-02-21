@@ -12,6 +12,8 @@ class UCapsuleComponent;
 class USkeletalMeshComponent;
 class UInputMappingContext;
 class UInputAction;
+class USpringArmComponent;
+class UCameraComponent;
 
 UCLASS()
 class BP_SLASH_API ABird : public APawn
@@ -42,4 +44,10 @@ private:
 
 	UPROPERTY(VisibleAnywhere);
 	USkeletalMeshComponent* BirdMesh;
+
+	UPROPERTY(VisibleAnywhere);
+	USpringArmComponent* SpringArm;
+
+	UPROPERTY(VisibleAnywhere);
+	UCameraComponent* ViewCamera;
 };
