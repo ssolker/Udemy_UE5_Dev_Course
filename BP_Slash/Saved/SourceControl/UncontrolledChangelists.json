@@ -45,11 +45,12 @@
 				"C:/UE/UE_Projects/Udemy_UE5_Dev_Course2/BP_Slash/Content/OrcGirl/Animations/Anim_Attack_R.uasset",
 				"C:/UE/UE_Projects/Udemy_UE5_Dev_Course2/BP_Slash/Content/StarterContent/Blueprints/Items/Weapons/BP_Weapon.uasset",
 				"C:/UE/UE_Projects/Udemy_UE5_Dev_Course2/BP_Slash/Content/OrcGirl/Animations/Anim_Attack_L.uasset",
-				"C:/UE/UE_Projects/Udemy_UE5_Dev_Course2/BP_Slash/Content/OrcGirl/Blueprints/OrcState.uasset",
 				"C:/UE/UE_Projects/Udemy_UE5_Dev_Course2/BP_Slash/Content/OrcGirl/Input/IA_Equip.uasset",
 				"C:/UE/UE_Projects/Udemy_UE5_Dev_Course2/BP_Slash/Content/OrcGirl/Blueprints/EOrcState.uasset",
 				"C:/UE/UE_Projects/Udemy_UE5_Dev_Course2/BP_Slash/Content/OrcGirl/Animations/ABP_OrcMainStates.uasset",
 				"C:/UE/UE_Projects/Udemy_UE5_Dev_Course2/BP_Slash/Content/OrcGirl/Animations/ABP_OrcIK.uasset",
+				"C:/UE/UE_Projects/Udemy_UE5_Dev_Course2/BP_Slash/Content/OrcGirl/Animations/AM_AttackOrc.uasset",
+				"C:/UE/UE_Projects/Udemy_UE5_Dev_Course2/BP_Slash/Content/OrcGirl/Blueprints/OrcState.uasset",
 				"C:/UE/UE_Projects/Udemy_UE5_Dev_Course2/BP_Slash/Content/OrcGirl/Input/IA_OrcGirlMove.uasset"
 			]
 		}
