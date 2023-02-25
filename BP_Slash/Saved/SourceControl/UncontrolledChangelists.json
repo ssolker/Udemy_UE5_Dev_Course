@@ -50,6 +50,9 @@
 				"C:/UE/UE_Projects/Udemy_UE5_Dev_Course2/BP_Slash/Content/OrcGirl/Animations/ABP_OrcMainStates.uasset",
 				"C:/UE/UE_Projects/Udemy_UE5_Dev_Course2/BP_Slash/Content/OrcGirl/Animations/ABP_OrcIK.uasset",
 				"C:/UE/UE_Projects/Udemy_UE5_Dev_Course2/BP_Slash/Content/OrcGirl/Animations/AM_AttackOrc.uasset",
+				"C:/UE/UE_Projects/Udemy_UE5_Dev_Course2/BP_Slash/Content/OrcGirl/Mesh/SK_OrcGirl1.uasset",
+				"C:/UE/UE_Projects/Udemy_UE5_Dev_Course2/BP_Slash/Content/OrcGirl/Blueprints/EOrcActionState.uasset",
+				"C:/UE/UE_Projects/Udemy_UE5_Dev_Course2/BP_Slash/Content/OrcGirl/Animations/Orc_Idle1.uasset",
 				"C:/UE/UE_Projects/Udemy_UE5_Dev_Course2/BP_Slash/Content/OrcGirl/Blueprints/OrcState.uasset",
 				"C:/UE/UE_Projects/Udemy_UE5_Dev_Course2/BP_Slash/Content/OrcGirl/Input/IA_OrcGirlMove.uasset"
 			]
