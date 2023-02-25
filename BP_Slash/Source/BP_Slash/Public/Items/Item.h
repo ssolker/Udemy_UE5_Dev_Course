@@ -40,15 +40,16 @@ protected:
 	UFUNCTION()
 	virtual void OnSphereEndOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
 
+	//BlueprintReadOnly, meta = (AllowPrivateAccess = "true") to expose
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
+	UStaticMeshComponent* ItemMesh;
+
 private:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
-		float RunningTime;
+	float RunningTime;
 
 	UPROPERTY(VisibleAnywhere)
-		UStaticMeshComponent* ItemMesh;
-
-	UPROPERTY(VisibleAnywhere)
-		USphereComponent* Sphere;
+	USphereComponent* Sphere;
 };
 
 template<typename T>
