@@ -30,7 +30,6 @@
 				"C:/UE/UE_Projects/Udemy_UE5_Dev_Course2/BP_Slash/Content/Mixamo/XBot/SK_xbot.uasset",
 				"C:/UE/UE_Projects/Udemy_UE5_Dev_Course2/BP_Slash/Content/Mixamo/XBot/Rigs/IK_xbot.uasset",
 				"C:/UE/UE_Projects/Udemy_UE5_Dev_Course2/BP_Slash/Content/Mixamo/XBot/Animations/Standing_Idle.uasset",
-				"C:/UE/UE_Projects/Udemy_UE5_Dev_Course2/BP_Slash/Content/Mixamo/XBot/Animations/Standing_Melee_Attack_Downward.uasset",
 				"C:/UE/UE_Projects/Udemy_UE5_Dev_Course2/BP_Slash/Content/Mixamo/XBot/X_Bot_PhysicsAsset.uasset",
 				"C:/UE/UE_Projects/Udemy_UE5_Dev_Course2/BP_Slash/Content/OrcGirl/Rigs/IK_Orc.uasset",
 				"C:/UE/UE_Projects/Udemy_UE5_Dev_Course2/BP_Slash/Content/Mixamo/XBot/Animations/RTG_xbot.uasset",
@@ -62,6 +61,8 @@
 				"C:/UE/UE_Projects/Udemy_UE5_Dev_Course2/BP_Slash/Content/OrcGirl/Animations/Equip_1.uasset",
 				"C:/UE/UE_Projects/Udemy_UE5_Dev_Course2/BP_Slash/Content/OrcGirl/Animations/AM_Equip.uasset",
 				"C:/UE/UE_Projects/Udemy_UE5_Dev_Course2/BP_Slash/Content/OrcGirl/Animations/Unequip_1.uasset",
+				"C:/UE/UE_Projects/Udemy_UE5_Dev_Course2/BP_Slash/Content/OrcGirl/Blueprints/BP_OrcGirl_Enemy.uasset",
+				"C:/UE/UE_Projects/Udemy_UE5_Dev_Course2/BP_Slash/Content/Mixamo/XBot/Animations/Standing_Melee_Attack_Downward.uasset",
 				"C:/UE/UE_Projects/Udemy_UE5_Dev_Course2/BP_Slash/Content/OrcGirl/Blueprints/OrcState.uasset",
 				"C:/UE/UE_Projects/Udemy_UE5_Dev_Course2/BP_Slash/Content/OrcGirl/Input/IA_OrcGirlMove.uasset"
 			]
