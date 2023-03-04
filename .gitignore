@@ -84,3 +84,7 @@ BP_Slash/Content/OrcGirl/Demo/**
 BP_Slash/Content/OrcGirl/Materials/**
 BP_Slash/Content/OrcGirl/Mesh/**
 BP_Slash/Content/OrcGirl/Textures/**
+BP_Slash/Content/Megascans/*
+BP_Slash/Content/MSPresets/*
+
+Slash/Saved/Config/CrashReportClient/**

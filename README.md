@@ -15,3 +15,10 @@ Turn off Live Coding - Close Unreal Engine
 Right+Click Unreal Engine Project and generate visual studio files
 Build in Visual Studio
 Open Unreal engine and can view now
+
+## Blender and Root Animations
+
+https://www.udemy.com/course/unreal-engine-5-the-ultimate-game-developer-course/learn/lecture/33116774#overview
+https://github.com/enziop/mixamo_converter
+https://github.com/brkeejp/mixamo_converter
+https://www.blender.org/
